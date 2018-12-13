@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    tools:context=".FragmentThree">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clSelDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtFr3Today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/today"
+            android:textColor="?android:attr/textColorTertiary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFr3AfterTomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/afterTomorrow"
+            android:textColor="?android:attr/textColorTertiary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFr3Tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/tomorrow"
+            android:textColor="?android:attr/textColorTertiary"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtFr3AfterTomorrow"
+            app:layout_constraintStart_toEndOf="@+id/txtFr3Today"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/clWeather"
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clSelDay">
+
+        <TextView
+            android:id="@+id/txtFr3Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFr3City" />
+
+        <TextView
+            android:id="@+id/txtFr3Temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="+00"
+            android:textSize="150dp"
+            app:layout_constraintStart_toStartOf="@+id/txtFr3Date"
+            app:layout_constraintTop_toBottomOf="@+id/txtFr3Date" />
+
+        <TextView
+            android:id="@+id/txtFr3City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="TextView"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFr3FeelsLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/txtFr3Temp"
+            app:layout_constraintTop_toBottomOf="@+id/txtFr3Temp" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

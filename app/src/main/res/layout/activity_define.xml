@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    tools:context=".FragmentDefine">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etFrAPIpart3"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etFrAPIpart2"
+            app:layout_constraintStart_toEndOf="@+id/etFrAPIpart2"
+            app:layout_constraintTop_toTopOf="@+id/etFrAPIpart2"
+            app:layout_constraintVertical_bias="0.501" />
+
+        <EditText
+            android:id="@+id/etFrAPIpart2"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="wwww"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etFrAPIpart1"
+            app:layout_constraintStart_toEndOf="@+id/etFrAPIpart1"
+            app:layout_constraintTop_toTopOf="@+id/etFrAPIpart1"
+            app:layout_constraintVertical_bias="0.498" />
+
+        <EditText
+            android:id="@+id/etFrAPIpart1"
+            android:layout_width="71dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="wwwwwwww"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etFrAPIpart4"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etFrAPIpart3"
+            app:layout_constraintStart_toEndOf="@+id/etFrAPIpart3"
+            app:layout_constraintTop_toTopOf="@+id/etFrAPIpart3"
+            app:layout_constraintVertical_bias="0.501" />
+
+        <EditText
+            android:id="@+id/etFrAPIpart5"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="wwwwwwwwwwww"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etFrAPIpart4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/etFrAPIpart4"
+            app:layout_constraintTop_toTopOf="@+id/etFrAPIpart4" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Пожалуйста, введите свой Yandex API Key:"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:text="Сохранить"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+</android.support.constraint.ConstraintLayout>

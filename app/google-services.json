@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "854676226129",
+    "firebase_url": "https://yandexweathertestapp.firebaseio.com",
+    "project_id": "yandexweathertestapp",
+    "storage_bucket": "yandexweathertestapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854676226129:android:e9d70c8f2efa3076",
+        "android_client_info": {
+          "package_name": "tk.lorddarthart.yandexweathertestapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854676226129-5ru76glt7b5l3gcnkg3505ggniufrg57.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tk.lorddarthart.yandexweathertestapp",
+            "certificate_hash": "4ed870bff8a58e93395db09d9befceaa8674f16b"
+          }
+        },
+        {
+          "client_id": "854676226129-6f8p40keb1k5urvdf0dvtsqqjl2r02qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzV-qIk8ix8wEr8NmC08MN8ULqYvF82Bg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854676226129-6f8p40keb1k5urvdf0dvtsqqjl2r02qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
