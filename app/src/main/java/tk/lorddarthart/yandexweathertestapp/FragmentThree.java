@@ -152,7 +152,6 @@ public class FragmentThree extends Fragment {
 
     private void getTodayTemp() {
         try {
-
             selectedTaD = new Date(Long.valueOf(String.valueOf(jsonObject.getLong("now"))+"000"));
 
             if (jsonObject.getJSONObject("fact").getInt("feels_like")>0) {
